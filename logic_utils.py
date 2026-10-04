@@ -1,6 +1,12 @@
 def get_range_for_difficulty(difficulty: str):
     """Return (low, high) inclusive range for a given difficulty."""
-    raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+    if difficulty == "Easy":
+        return 1, 20
+    if difficulty == "Normal":
+        return 1, 50
+    if difficulty == "Hard":
+        return 1, 100
+    return 1, 50
 
 
 def parse_guess(raw: str):
@@ -11,14 +17,29 @@ def parse_guess(raw: str):
     """
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
 
-
+#FIX: Fixed the logic and put it to logic_utils.py from app,py, used an agent for this to work. 
 def check_guess(guess, secret):
     """
     Compare guess to secret and return (outcome, message).
 
     outcome examples: "Win", "Too High", "Too Low"
     """
-    raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+    if guess == secret:
+        return "Win", "🎉 Correct!"
+    # FIX: Hints were swapped — a guess above the secret should say go LOWER.
+    # Moved from app.py into logic_utils.py with Claude Code.
+    try:
+        if guess > secret:
+            return "Too High", "📉 Go LOWER!"
+        else:
+            return "Too Low", "📈 Go HIGHER!"
+    except TypeError:
+        g = str(guess)
+        if g == secret:
+            return "Win", "🎉 Correct!"
+        if g > secret:
+            return "Too High", "📉 Go LOWER!"
+        return "Too Low", "📈 Go HIGHER!"
 
 
 def update_score(current_score: int, outcome: str, attempt_number: int):
