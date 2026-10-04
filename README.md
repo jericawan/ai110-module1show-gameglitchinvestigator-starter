@@ -26,9 +26,11 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+The game is to guess the random number and will output an score based on the attempts made. 
 - [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
-
+I found 4 different bugs within the game, first being the logic error with the hints, as guess is higher than the actual secret number it tells users to "go higher" rather than "go lower". The second logic error that occurred was for the different ranges of guesses depending on the difficulty, as the normal level seem to have a higher difficulty compared to hard. For UI errors I found that the initial screen inaccurately displays the number of attempts left. For example, in the "normal" level it would display 7 attempts rather than 8 which is the preset number of attempts. Lasgt I noticed that the new game button did not work. 
+ [ ] Explain what fixes you applied.
+First I applied the logic error with the ranges, I asked AI to change the ranges to be in order of difficulty, so the more difficult the level was the higher the range. While I fixed this error, the AI also fixed the the attempts display along with it. Next I worked on the logic error with the guesses, as I asked to move the method while correcting the go higher/lower error. Lastly I asked AI to fix the issue with the "new game" button. As I was looking through the code, I asked AI to look at the app.py code specifically when it changes the states and resets the game ads a whole. 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
