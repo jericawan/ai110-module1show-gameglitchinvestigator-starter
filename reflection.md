@@ -46,6 +46,8 @@ I do believe that AI did help me understand the tests because it would give a de
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+Streamlit is a source that allows a user to create a UI for an application without using HTML and CSS. 
+
 
 ---
 
@@ -53,5 +55,8 @@ I do believe that AI did help me understand the tests because it would give a de
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
+  One strategy or habit from this project that I want to reuse for future labs/project is highlighting where I think the bug/issues occur. This allows me highlight errors especially when making specific requests for AI. 
 - What is one thing you would do differently next time you work with AI on a coding task?
+One thing I could have done differently when working with AI on a coding task and change the different options on the AI bot whether it is the model or the effort. 
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+I believe that this project changed the way i think about AI generated code as it allows mee to gain a better understanding on how bugs are changed and how word choice plays a big role in properly correcting code with AI. 

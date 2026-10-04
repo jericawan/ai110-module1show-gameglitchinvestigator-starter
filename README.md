@@ -33,11 +33,11 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1.User enters a guess of 23
+2. Game returns "Too Low Guess HIGHER"
+3. Score is updated after each guess.
+4. User enters 45, and game shows "Too high guess LOWER" 
+5. Game ends after user correctly guesses or used up their amount of attemtpts. 
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
